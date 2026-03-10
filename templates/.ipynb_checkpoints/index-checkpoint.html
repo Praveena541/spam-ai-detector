@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Spam Detection AI</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h1>Spam Email Detection</h1>
+
+<form action="/predict" method="post">
+
+<textarea name="message" placeholder="Enter email text here"></textarea>
+
+<br><br>
+
+<button type="submit">Detect Spam</button>
+
+</form>
+
+<h2>{{ prediction_text }}</h2>
+
+</body>
+</html>
